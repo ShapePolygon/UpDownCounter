@@ -1,0 +1,30 @@
+`timescale 1ns/1ns
+
+module tb_Counter;
+	// virtual inputs
+	reg clk, dir, reset;
+	// virtual outputs
+	wire [3:0] Q;
+	
+	// module under test
+	Counter dut(clk, dir, reset, Q);
+	
+	initial begin
+		clk = 0;
+		#1 dir = 0; reset = 1; $display("dir=%d, reset=%d | Q=%d", dir, reset, Q);
+		#1 dir = 0; reset = 0; $display("dir=%d, reset=%d | Q=%d", dir, reset, Q);
+		#2 dir = 0; reset = 0; $display("dir=%d, reset=%d | Q=%d", dir, reset, Q);
+		#3 dir = 0; reset = 0; $display("dir=%d, reset=%d | Q=%d", dir, reset, Q);
+		#4 dir = 0; reset = 0; $display("dir=%d, reset=%d | Q=%d", dir, reset, Q);
+	   #1 dir = 0; reset = 1; $display("dir=%d, reset=%d | Q=%d", dir, reset, Q);
+		#2 dir = 0; reset = 1; $display("dir=%d, reset=%d | Q=%d", dir, reset, Q);
+		#3 dir = 0; reset = 1; $display("dir=%d, reset=%d | Q=%d", dir, reset, Q);
+		#4 dir = 0; reset = 1; $display("dir=%d, reset=%d | Q=%d", dir, reset, Q);
+		
+		#100; // end simulation
+	end
+	
+	always begin
+		#1 clk = ~clk;
+	end
+endmodule

@@ -1,0 +1,106 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Decagon/_PC/Desktop/UpDownCounter/sim
+vCounter
+Z1 !s110 1746968038
+!i10b 1
+!s100 a^NnaimZOc;BLZ2N6XoTe3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IOezVS:?G7BVUURIXb73Q:0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1746966705
+8../Counter.v
+F../Counter.v
+!i122 1
+L0 5 15
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1746968038.000000
+!s107 ../VariableClock.v|../Top.v|../Counter.v|
+Z6 !s90 -nolock|../Counter.v|../Top.v|../VariableClock.v|
+!i113 1
+Z7 o-nolock
+Z8 tCvgOpt 0
+n@counter
+vtb
+R1
+!i10b 1
+!s100 Q[FGJf`hTJSI0MdTkf5g]1
+R2
+IRME@Bg21Ha9<F?H[QWQlT1
+R3
+R0
+w1746968025
+8../tb/tb.v
+F../tb/tb.v
+!i122 0
+L0 9 41
+R4
+r1
+!s85 0
+31
+!s108 1746968037.000000
+!s107 ../tb/tb.v|
+!s90 -nolock|../tb/tb.v|
+!i113 1
+R7
+R8
+vTop
+R1
+!i10b 1
+!s100 1]]U_c0m2M6bmzWUD5_L<1
+R2
+IHn[m1eggQR<O71j1C^:fm0
+R3
+R0
+w1746968008
+8../Top.v
+F../Top.v
+!i122 1
+L0 1 13
+R4
+r1
+!s85 0
+31
+R5
+Z9 !s107 ../VariableClock.v|../Top.v|../Counter.v|
+R6
+!i113 1
+R7
+R8
+n@top
+vVariableClock
+R1
+!i10b 1
+!s100 U5Qh8>M39jQH:ihe?<AMj1
+R2
+IcA8<FRS73ZWPd0b6:k1lT1
+R3
+R0
+w1746968001
+8../VariableClock.v
+F../VariableClock.v
+!i122 1
+L0 1 17
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+R8
+n@variable@clock
